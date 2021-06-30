@@ -4,7 +4,7 @@ package jugador;
 import Visual.visualTablero.VisualCasillas;
 import Visual.visualTablero.VisualTablero;
 import tablero.casillas.*;
-import Visual.Pintar
+import Visual.Pintar;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;

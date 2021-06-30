@@ -5,22 +5,29 @@
  */
 package Visual;
 
-import com.navi.Lectura.GuardarObjetos;
-import com.navi.Lectura.LecturaTexto;
-import com.navi.Lectura.LeerObjetos;
-import com.navi.Visual.opcionesMenu.VisualJugar;
-import com.navi.Visual.opcionesMenu.VisualReportes;
-import com.navi.jugador.ArregloPlayer;
-import com.navi.jugador.Player;
+import Lectura.GuardarObj;
+import Lectura.TextLectura;
+import Lectura.LeerObj;
+import Visual.opcionesMenu.Visual_Jugar;
+import Visual.opcionesMenu.VisualReportes;
+import jugador.ArregloPlayer;
+import jugador.Player;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;  
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.*;
 
-public class VisualMenu extends JFrame implements ActionListener, Pintar{
+
+     public class VisualMenu extends  javax.swing.JFrame implements ActionListener, Pintar{
 
     VisualReportes reportes = new VisualReportes();
-    VisualJugar juego = new VisualJugar();
+    Visual_Jugar juego = new Visual_Jugar();
     JPanel panelCentral = new JPanel();
     JPanel panelJugar = new JPanel();
     JPanel panelCrearJugador = new JPanel();
@@ -47,10 +54,10 @@ public class VisualMenu extends JFrame implements ActionListener, Pintar{
 
 
     private void crearElementos() {
-        LeerObjetos.abrirObjeto("Jugadores");
+        LeerObj.abrirObj("Jugadores");
         menu.setLayout(new BorderLayout());
-        menu.setFont(new Font("Open Sans", 3, 25));
-        menu.setText("<html><br/><br/><br/>______________MENÚ_____________<br/><br/><br/><br/></html>");
+       
+        menu.setText(".................MENU INICIAL................");
         menu.setForeground(Color.BLACK);
         panelCentral.setLayout(new GridLayout(5,1));
 
@@ -97,8 +104,8 @@ public class VisualMenu extends JFrame implements ActionListener, Pintar{
 
     @Override
     public void pintarBoton(JButton boton) {
-        boton.setBackground(Color.black);
-        boton.setForeground(Color.WHITE);
+        boton.setBackground(Color.GREEN);
+        boton.setForeground(Color.BLACK);
     }
 
     @Override
@@ -131,7 +138,7 @@ public class VisualMenu extends JFrame implements ActionListener, Pintar{
         }
         else if(e.getSource() == botonSalir){
             for (int i = 0; i < ArregloPlayer.cantidadPlayers; i++) {
-                GuardarObjetos.GuardarObjetos(ArregloPlayer.jugadores[i]);
+                GuardarObj.GuardarObj(ArregloPlayer.jugadores[i]);
             }
             JOptionPane.showMessageDialog(null,"Adios :3");
             System.exit(0);

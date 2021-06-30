@@ -11,7 +11,11 @@ import java.io.*;
 public class LeerObj {
     static Player jugador;
 
+<<<<<<< HEAD
     public static void abrirObj(String carpeta){
+=======
+    public static void abrirObjeto(String carpeta){
+>>>>>>> de2baaf46e69b4e3e7e5d05c73996af73e551351
 
         String directorio = GuardarObj.directorio + "/"+carpeta;
         File archivoo = new File(directorio); //Abrir con dirección directa
@@ -38,6 +42,12 @@ public class LeerObj {
         }
     }
 
+<<<<<<< HEAD
     
+=======
+    public static void abrirObj(String jugadores) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+>>>>>>> de2baaf46e69b4e3e7e5d05c73996af73e551351
 
 }

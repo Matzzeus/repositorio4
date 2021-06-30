@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package Visual.visualTablero;
 
 import Visual.Pintar;
@@ -185,3 +186,19 @@ public class VisualTablero extends JFrame implements ActionListener, Pintar {
     }
 
 }
+=======
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Visual.visualtablero;
+
+/**
+ *
+ * @author Matzzeus
+ */
+public class VisualTablero {
+    
+}
+>>>>>>> de2baaf46e69b4e3e7e5d05c73996af73e551351

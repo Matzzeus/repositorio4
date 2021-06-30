@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package Visual.opcionesMenu;
 
 import Lectura.TextLectura;
@@ -52,3 +53,19 @@ import java.awt.event.ActionListener;
         }
     }
 }
+=======
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Visual.opcionesMenu;
+
+/**
+ *
+ * @author Matzzeus
+ */
+public class Visual_Jugar {
+    
+}
+>>>>>>> de2baaf46e69b4e3e7e5d05c73996af73e551351

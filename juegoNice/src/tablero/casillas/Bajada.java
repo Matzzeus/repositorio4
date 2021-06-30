@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package tablero.casillas;
 
 import Visual.visualTablero.VisualTablero;
@@ -18,3 +19,19 @@ public class Bajada extends Casilla{
 
     }
 }
+=======
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tablero.casillas;
+
+/**
+ *
+ * @author Matzzeus
+ */
+public class Bajada {
+    
+}
+>>>>>>> de2baaf46e69b4e3e7e5d05c73996af73e551351

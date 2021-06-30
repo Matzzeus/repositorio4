@@ -1,9 +1,10 @@
 package jugador;
 
-import Visual.Pintar;
+
 import Visual.visualTablero.VisualCasillas;
 import Visual.visualTablero.VisualTablero;
 import tablero.casillas.*;
+import Visual.Pintar
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;
